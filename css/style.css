@@ -1,0 +1,152 @@
+html{
+    font-family:candara;
+}
+
+body
+{
+    background-image: url("../img/bkg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(195,195,195,0.2);
+    height: 100%;
+    margin: 0;
+    padding: 5px;   
+}
+
+a{
+    text-decoration: none;
+}
+
+.container
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.column
+{
+    flex: 1;
+    min-width: 0;
+    background-color: rgba(195,195,195,0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.section
+{
+    background-color: rgba(155,155,155,0.2);
+    background-color:rgba(176, 190, 197, 0.5);
+    flex-grow: 0.2;
+}
+
+.profile
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.basics
+{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0);
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.photo
+{
+    flex: 0.2;
+    background-image: url("../img/profile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height:90px;
+    min-width: 80px;
+    padding: 10px;
+}
+
+.name
+{
+    margin-left: 20px;
+    flex-grow: 1.7;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 3.5vw;
+    margin: auto;
+    text-align: center;
+    vertical-align: center;
+    font-weight: 300;
+}
+
+.intro
+{
+    overflow: hidden;
+    flex-grow: 0.2;
+    text-align: center;
+    vertical-align: center;
+    /*background-color:rgba(176, 190, 197, 0.5);*/
+    min-width: 0;
+    font-size:100%;
+    font-weight: 500;
+}
+
+.interests
+{
+    overflow: hidden;
+    flex-grow: 0.2;
+    text-align: center;
+    vertical-align: middle;
+    /*background-color:rgba(176, 190, 197, 0.5);*/
+    min-width: 0;
+    font-weight: 500;
+    font-size:100%;
+}
+
+.currPos
+{
+    overflow: hidden;
+    flex-grow: 0.3;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 0;
+    font-weight: 500;
+    font-size:100%;
+}
+.skills
+{
+    overflow: hidden;
+    flex-grow: 0.3;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 0;
+    font-weight: 500;
+    font-size:100%;
+}
+
+
+.section + .section
+{
+    margin-top: 20px;
+}
+
+.column + .column
+{
+    margin-left: 20px;
+}
+
+#info{
+    margin: auto;
+    vertical-align: middle;
+    background-color:rgba(176, 190, 197, 0.5);
+
+}
